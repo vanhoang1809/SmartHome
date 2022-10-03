@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #fff;
+    padding: 0px;
+    margin: 0px;
+    font-size: 18px;
+}
+
+input,
+button {
+    font-weight: solid;
+}
+
+.main-div,
+.loggedin-div {
+    width: 30%;
+    margin: 0px auto;
+    margin-top: 150px;
+    padding: 100px;
+    text-align: center;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.main-div input {
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+    padding: 15px;
+    outline: none;
+    width: 90%;
+    margin-bottom: 10px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+}
+
+.main-div input:focus {
+    border: 1px solid #777;
+}
+
+.main-div button,
+.loggedin-div button {
+    font-size: 18px;
+    background: #e4772b;
+    color: #fff;
+    border: 1px solid #e4772b;
+    border-radius: 5px;
+    padding: 15px;
+    display: block;
+    width: 90%;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.main-div button:hover,
+.loggedin-div button:hover {
+    background: #fff;
+    color: #e4772b;
+    border: 1px solid #e4772b;
+    cursor: pointer;
+}
+
+.reset {
+    font-size: 16px;
+    color: #777;
+    text-decoration: #777;
+}
+
+.fas {
+    margin-left: 5px;
+    ;
+}

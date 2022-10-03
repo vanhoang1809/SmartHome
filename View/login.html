@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Style/login.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="login_div" class="main-div">
+        <div class="title"><span>Sử dụng mật khẩu HyHome cung cấp</span></div>
+                    <input type="email" id="email_field" placeholder="Email..." />
+        <input type="password" id="password_field" placeholder="Password..." />
+        <button onclick="login();">Đăng nhập</button>
+        <a class="reset" href="../View/resetPassword.html"><span>Quên mật khẩu?</span></a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBHriX4lnJ4KftVz1TlJHIUWXjgr2y3NQ8",
+            authDomain: "home-f11af.firebaseapp.com",
+            projectId: "home-f11af",
+            storageBucket: "home-f11af.appspot.com",
+            messagingSenderId: "246483548327",
+            appId: "1:246483548327:web:4bb0d129dc59d931190382"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="../Controller/login.js"></script>
+</body>
+
+</html>

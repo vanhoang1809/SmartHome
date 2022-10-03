@@ -1,0 +1,962 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #ece9e9 !important;
+}
+
+/********Tab_Slide*********/
+
+.slide1 {
+  width: 292px;
+  margin-left: -20px;
+  position: sticky;
+  height: 720px;
+  top: 0;
+  overflow: auto;
+  background: #f1eff1 !important;
+}
+
+.nav-link {
+  color: black !important;
+  border-bottom: none !important;
+  font-size: 20px;
+  margin-top: 10px;
+  width: 290px;
+  height: 170px;
+  background: none !important;
+  opacity: none !important;
+  border: none !important;
+  border-bottom: none !important;
+}
+
+.nav_room {
+  width: 100%;
+  height: 100%;
+  padding: auto;
+  position: relative;
+  cursor: pointer !important;
+  border-radius: 15px 15px 10px 10px;
+  overflow: hidden;
+}
+
+.image img {
+  width: 100%;
+  height: 90px;
+}
+
+.linear_living {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background-image: linear-gradient(to right, #8454ccdc 60%, #ef65dada);
+  margin-top: -100px;
+}
+
+.linear_bed {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background-image: linear-gradient(to right, #ff3300c2 70%, #efe665bb);
+  margin-top: -100px;
+}
+
+.linear_kitchen {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background-image: linear-gradient(to right, #f3951ad2 50%, #f073ddc7);
+  margin-top: -100px;
+}
+
+.linear_toilet {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background-image: linear-gradient(to right, #ffff33bb 40%, #65a1efc4);
+  margin-top: -100px;
+}
+
+.icon_fas {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  background: white;
+  padding: 5px 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #b2b2b2;
+}
+
+.icon_fas_small {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  background: white;
+  padding: 5px 11px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #b2b2b2;
+}
+
+.title_room {
+  position: absolute;
+  top: 52px;
+  left: 50px;
+  color: white;
+  padding: 5px 8px;
+  width: 100%;
+  height: 40px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.title_room_small {
+  position: absolute;
+  top: 52px;
+  left: 60px;
+  color: white;
+  padding: 5px 8px;
+  width: 100%;
+  height: 40px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.text_sensors {
+  height: 58px;
+  width: 100%;
+  background: white;
+}
+
+.text_temperature {
+  float: left;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+
+.title_message {
+  font-weight: bold;
+  color: #534e4e;
+  font-size: 16px;
+}
+
+.message_sensors {
+  font-weight: bold;
+  font-size: 17px;
+  color: #6c6c6c;
+}
+
+.text_humidity {
+  float: right;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  border-left: 2px solid #b2b2b2;
+}
+
+.text-nav-tabs {
+  margin-left: 10px;
+}
+
+/**********************************************************/
+
+.tabslide {
+}
+
+.tab_user {
+}
+
+/*******************************BUTTON CONTROL*********************/
+
+.heading_living {
+  margin-top: 10px;
+  padding-left: 100px;
+  position: relative;
+  width: 900px !important;
+  margin-left: -90px;
+  height: 185px;
+  border-radius: 10px 10px 0 0;
+  background: white;
+}
+
+.title_control {
+  width: 180px;
+  margin-left: 20px;
+}
+
+.icon_fas_control {
+  top: 15px;
+  left: 10px;
+  background: linear-gradient(to right, #8454ccdc 40%, #ef65dada);
+  padding: 7px 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  font-size: 16px;
+}
+
+.icon_fas_control_bed {
+  top: 15px;
+  left: 10px;
+  background: linear-gradient(to right, #ff3300c2 50%, #efe665bb);
+  padding: 7px 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  font-size: 16px;
+}
+
+.icon_fas_control_kitchen {
+  top: 15px;
+  left: 10px;
+  background-image: linear-gradient(to right, #f3951ad2 50%, #f073ddc7);
+  padding: 7px 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  font-size: 16px;
+}
+
+.icon_fas_control_toilet {
+  top: 15px;
+  left: 10px;
+  background-image: linear-gradient(to right, #ffff33bb 40%, #65a1efc4);
+  padding: 7px 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  font-size: 16px;
+}
+
+.title_name_control {
+  margin-top: -33px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #6c6c6c;
+  margin-left: 45px;
+}
+
+/**********************LED DEVICE********************/
+
+.progress {
+  width: 120px;
+  height: 80px;
+  padding: 65px;
+  margin-top: 10px;
+  margin-left: 60px;
+  border-radius: 20px !important;
+  box-shadow: 1px 2px 7px 2px rgb(161, 161, 163);
+}
+
+.button_control {
+  width: 100%;
+  margin-top: 14px;
+  margin-left: -40px;
+  height: 135px;
+}
+
+.toggle-btn {
+  border-radius: 10px 10px 10px 10px;
+  margin-top: -67px;
+  color: black;
+  padding: 67px;
+  margin-left: -67px;
+  background: white !important;
+  outline: none !important;
+  border: none !important;
+}
+
+.icon_led_control_off {
+  font-size: 30px;
+  color: orange;
+  margin-left: -130px;
+  margin-top: -60px;
+}
+
+.progress_led_control_off {
+  height: 10px;
+  color: rgb(233, 42, 42);
+  font-size: 150px;
+  margin-top: -185px;
+  margin-left: 20px;
+}
+
+.title_led_control_off {
+  margin-top: 190px;
+  font-size: 19px;
+  font-weight: bold;
+  margin-left: -40px;
+  text-align: left;
+}
+
+.note_led_control_off {
+  position: absolute;
+  font-size: 17px;
+  margin-top: 5px;
+  margin-left: -40px;
+}
+
+.toggle-btn:hover {
+  outline: none !important;
+  border: none !important;
+}
+
+.toggle-btn:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+.toggle-btn > .inner-circle {
+  transition: all 3ms;
+}
+
+.toggle-btn.active {
+  color: white;
+  background: orange !important;
+}
+
+.icon_led_control_on {
+  font-size: 30px;
+  color: white;
+  margin-left: -130px;
+  margin-top: -60px;
+}
+
+.progress_led_control_on {
+  height: 10px;
+  color: #ff6900;
+  font-size: 150px;
+  margin-top: -185px;
+  margin-left: 20px;
+}
+
+.title_led_control_on {
+  margin-top: 190px;
+  font-size: 19px;
+  font-weight: bold;
+  margin-left: -40px;
+  text-align: left;
+}
+
+.note_led_control_on {
+  position: absolute;
+  font-size: 17px;
+  margin-top: 5px;
+  margin-left: -40px;
+}
+
+/**************************FAN DEVICE*********************/
+
+.fan_living {
+  width: 120px;
+  height: 80px;
+  padding: 65px;
+  background: black;
+  margin-left: 230px;
+  position: relative;
+  margin-top: -150px;
+  border-radius: 20px !important;
+  box-shadow: 1px 2px 7px 2px rgb(161, 161, 163);
+  overflow: hidden;
+}
+
+.toggle_btn_fan {
+  border-radius: 10px 10px 10px 10px;
+  margin-top: -67px;
+  padding: 67px;
+  margin-left: -67px;
+  background: white !important;
+  outline: none !important;
+  border: none !important;
+}
+
+.icon_fan_control_off {
+  font-size: 30px;
+  color: orange;
+  margin-left: -130px;
+  margin-top: -60px;
+}
+
+.progress_fan_control_off {
+  height: 10px;
+  color: rgb(233, 42, 42);
+  font-size: 150px;
+  margin-top: -185px;
+  margin-left: 20px;
+}
+
+.title_fan_control_off {
+  margin-top: 190px;
+  font-size: 19px;
+  font-weight: bold;
+  margin-left: -40px;
+  text-align: left;
+}
+
+.note_fan_control_off {
+  position: absolute;
+  font-size: 17px;
+  margin-top: 5px;
+  margin-left: -40px;
+}
+
+.toggle_btn_fan:hover {
+  outline: none !important;
+  border: none !important;
+}
+
+.toggle_btn_fan:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+.icon_fan_control_on {
+  font-size: 30px;
+  color: white;
+  margin-left: -130px;
+  margin-top: -60px;
+}
+
+.progress_fan_control_on {
+  height: 10px;
+  color: #ff6900;
+  font-size: 150px;
+  margin-top: -185px;
+  margin-left: 20px;
+}
+
+.title_fan_control_on {
+  margin-top: 190px;
+  font-size: 19px;
+  font-weight: bold;
+  margin-left: -40px;
+  text-align: left;
+}
+
+.note_fan_control_on {
+  position: absolute;
+  font-size: 17px;
+  margin-top: 5px;
+  margin-left: -40px;
+}
+
+.toggle_btn_fan .active {
+  margin-top: -67px;
+}
+
+.toggle_fan_on {
+  color: white;
+  background: orange !important;
+}
+
+/**********************************DOOR DEVICE****************************/
+
+.door_living {
+  width: 120px;
+  height: 80px;
+  padding: 65px;
+  background: black;
+  margin-left: 400px;
+  margin-top: -130px;
+  border-radius: 20px !important;
+  box-shadow: 1px 2px 7px 2px rgb(161, 161, 163);
+  overflow: hidden;
+}
+
+.toggle_btn_door {
+  border-radius: 10px 10px 10px 10px;
+  margin-top: -67px;
+  padding: 67px;
+  margin-left: -67px;
+  background: white !important;
+  outline: none !important;
+  border: none !important;
+}
+
+.progress_door_control_off {
+  height: 10px;
+  color: rgb(233, 42, 42);
+  font-size: 150px;
+  margin-top: -185px;
+  margin-left: 20px;
+}
+
+.title_door_control_off {
+  margin-top: 190px;
+  font-size: 19px;
+  font-weight: bold;
+  margin-left: -40px;
+  text-align: left;
+}
+
+.note_door_control_off {
+  position: absolute;
+  font-size: 17px;
+  margin-top: 5px;
+  margin-left: -50px;
+}
+
+.toggle_btn_door:hover {
+  outline: none !important;
+  border: none !important;
+}
+
+.toggle_btn_door:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+.icon_door_control_off {
+  font-size: 30px;
+  color: orange;
+  margin-left: -130px;
+  margin-top: -60px;
+}
+
+.icon_door_control_on {
+  font-size: 30px;
+  color: white;
+  margin-left: -130px;
+  margin-top: -60px;
+}
+
+.progress_door_control_on {
+  height: 10px;
+  color: #ff6900;
+  font-size: 150px;
+  margin-top: -185px;
+  margin-left: 20px;
+}
+
+.title_door_control_on {
+  margin-top: 190px;
+  font-size: 19px;
+  font-weight: bold;
+  margin-left: -40px;
+  text-align: left;
+}
+
+.note_door_control_on {
+  position: absolute;
+  font-size: 17px;
+  margin-top: 5px;
+  margin-left: -50px;
+}
+
+.toggle_door_on {
+  color: white;
+  background: orange !important;
+}
+
+/*******************ADD DEVICE******************************/
+
+.add_living_device {
+  width: 120px;
+  height: 80px;
+  padding: 60px;
+  margin-left: 570px;
+  margin-top: -130px;
+  border-radius: 20px !important;
+  border: 4px dashed orange;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.icon_add_living_device {
+  font-size: 30px;
+  color: orange;
+  margin-top: -19px;
+  margin-left: -12px;
+}
+
+/****************************SENSOR VIEW*****************************/
+
+.tab_content_sensor {
+  padding-left: 100px;
+  position: relative;
+  width: 900px !important;
+  margin-left: -90px;
+  height: 525px;
+  background-color: white;
+  overflow: hidden;
+}
+
+/******************OPEN WEATHER API***********************/
+
+.wrapper_content_openWeather {
+  width: 900px;
+  height: 130px;
+  margin-left: -100px;
+  overflow: hidden;
+}
+
+.logo {
+  height: 110px;
+}
+
+.logo .logo_image {
+  margin-left: -20px;
+  margin-top: -50px;
+  height: 80px;
+  width: 190px;
+}
+
+.image_dog_walking {
+  margin-top: -50px;
+  margin-left: 10px;
+  height: 200px;
+  width: 230px;
+}
+
+.table_open_weather {
+  height: 110px;
+  width: 100%;
+}
+
+.content_openWeather {
+  height: 110px;
+}
+
+.icon_weather {
+  width: 90px;
+}
+
+.icon_weather img {
+  width: 90px;
+  height: 80px;
+  margin-top: px;
+}
+
+.content_openWeather {
+  width: 170px;
+  padding-left: 10px;
+  padding-top: -30px;
+}
+
+.content_openWeather_temperature {
+  height: 45px;
+  font-size: 36px;
+  color: #202124;
+  margin-top: -18px;
+}
+
+.content_openWeather_description {
+  font-size: 18px;
+}
+
+.note_openWeather_small {
+  font-size: 11px;
+  color: #7d7d83 !important;
+}
+
+.note_openWeather {
+  color: #4d4949;
+  height: 30px;
+  font-size: 16px !important;
+}
+
+.date_openWeather {
+  color: orange;
+  font-size: 15px;
+  height: 30px;
+  margin-left: 20px;
+}
+
+.title_country {
+  font-size: 17px;
+  margin-top: -20px;
+}
+
+.time_openWeather {
+  margin-left: 20px;
+}
+
+.title_country i {
+  color: #00d084;
+}
+
+.display_dayTime {
+  padding-left: 5px;
+  height: 70px;
+  border-left: 2px solid #6b6969;
+}
+
+/*****************DHT11******************/
+
+.wrapper_content_DHT11 {
+  border-top: 4px solid #534e4e;
+  width: 900px;
+  height: 230px;
+  margin-left: -100px;
+  /* background-color: #0099ff; */
+}
+.content-DHT11 {
+  margin-bottom: 30px;
+}
+.content_humidity {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.title_chart_humi {
+  font-size: 20px;
+  margin-top: -35px;
+  padding-bottom: 20px;
+  margin-left: 50px;
+  font-weight: bold;
+  color: rgb(70, 66, 66);
+}
+
+.title_chart_gauge_humidity {
+  width: 45px;
+  height: 45px;
+  background: #0693e3;
+  font-size: 25px;
+  padding-left: 3px;
+  color: white;
+  border-radius: 50%;
+  margin-left: 110px;
+  margin-top: -15px;
+}
+
+.title_chart_humi .content_temperature {
+  height: 280px;
+  background: rgb(255, 0, 128);
+}
+
+.content_temperature {
+  height: 280px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.title_chart_temp {
+  font-size: 20px;
+  margin-top: -35px;
+  padding-bottom: 20px;
+  margin-left: 50px;
+  font-weight: bold;
+  color: rgb(70, 66, 66);
+}
+
+.title_chart_gauge_temp {
+  width: 45px;
+  height: 45px;
+  background: #ff9800;
+  font-size: 25px;
+  padding-left: 3px;
+  color: white;
+  border-radius: 50%;
+  margin-left: 95px;
+  margin-top: -15px;
+}
+
+.chart_dht11 {
+  height: 280px;
+  background: rgb(0, 255, 85);
+}
+
+/******************sensors extra**********/
+
+.wrapper_content_sensors {
+  width: 900px;
+  height: 170px;
+  margin-left: -100px;
+}
+
+.wrapper_warning {
+  height: 170px;
+}
+
+.title_warning_sensor {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.content_warning_sensor {
+  width: 250px;
+  height: 90px;
+  background: #f7f4f1;
+  border: 5px solid #ff6900;
+  border-radius: 10px;
+  margin-left: 90px;
+  margin-top: 10px;
+  padding-top: 20px;
+}
+
+#user_warnng_ninja {
+  font-size: 50px;
+  margin-left: -130px;
+  display: none;
+}
+
+#note_noPerson {
+  display: none;
+}
+
+#user_warnng_lock {
+  font-size: 50px;
+  margin-left: -130px;
+  display: none;
+}
+
+#note_Person {
+  display: none;
+}
+
+.note_warning_sensor {
+  font-size: 20px !important;
+  margin-top: -60px;
+  margin-left: 80px;
+}
+
+/******GASS********/
+
+.title_gas_sensor {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.content_gas_sensor {
+  width: 250px;
+  height: 90px;
+  background: #f7f4f1;
+  border: 5px solid rgb(0, 247, 255);
+  border-radius: 10px;
+  margin-left: 90px;
+  margin-top: 10px;
+  padding-top: 20px;
+}
+
+.note_gas_sensor {
+  font-size: 20px !important;
+  margin-top: -60px;
+  margin-left: 80px;
+}
+
+#gas_warnng_lock {
+  font-size: 50px;
+  margin-left: -130px;
+  display: block;
+}
+
+#gas_warnng_fire {
+  font-size: 50px;
+  margin-left: -130px;
+  display: none;
+}
+
+#note_nogas {
+  display: block;
+}
+
+#note_gas {
+  display: none;
+}
+
+.content_gas {
+  height: 170px;
+}
+
+/****************************USER PROFILE****************************/
+
+.user_profile {
+  width: 292px;
+  float: right;
+  margin-right: -15px;
+  position: sticky;
+  height: 720px;
+  top: 0;
+  overflow: auto;
+  background: #f1eff1 !important;
+  text-align: center;
+}
+
+.icon_user_img {
+  background: #fff7f7;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  font-size: 100px;
+  padding-top: 0px;
+  border: 5px solid orange;
+  margin-top: 100px;
+  margin-left: 55px;
+}
+
+.icon_user_img img {
+  width: 80%;
+  height: 80%;
+  padding: 30px 0px 10px 30px;
+  display: none;
+}
+
+.chooseImage {
+  margin-left: 115px;
+  margin-top: 10px;
+  font-size: 12px;
+  color: white;
+  display: flex;
+}
+
+.icon_user_img i {
+  color: #6b6969;
+}
+
+.btn-file {
+  padding: 5px 5px 5px 5px;
+  border-radius: 5px;
+  border: 2px solid #0099ff !important;
+  background: #f8f7f6;
+  outline: none !important;
+  color: black;
+}
+
+.btn-file:hover {
+  background: #ff6900;
+  color: white;
+  border: 2px solid #ff6900 !important;
+}
+
+.title_name_user {
+  padding-top: 20px;
+  font-size: 19px;
+  color: rgb(59, 50, 50);
+}
+
+.title_connect {
+  padding-top: 20px;
+  font-size: 17px;
+}
+
+.fa-sign-out-alt {
+  padding-top: 200px;
+  font-size: 70px;
+  color: #5e5c5c;
+  cursor: pointer;
+}
+
+.fa-sign-out-alt:hover {
+  padding-top: 200px;
+  font-size: 80px;
+  color: #ff6900;
+  transition: 0.2s;
+}
+
+/***********Button******************/
