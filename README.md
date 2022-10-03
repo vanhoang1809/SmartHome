@@ -1,4 +1,4 @@
-### This is list C Programming Advanced Exercise
+### This is Source Code and demo video of SmartHome Project 
 
 1. Link Video demo: **[Please click Here](https://drive.google.com/file/d/1oO-yQfX-p81TVYQ7Hfiw_3kuLxT_RipH/view?usp=sharing)**
 2. If you have any questions about my source code, please contact:
